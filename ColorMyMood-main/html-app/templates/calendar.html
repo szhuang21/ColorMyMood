@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/js-draw@1.0.0/dist/bundle.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <link rel="stylesheet" href="../static/css/calendar.css" />
+</head>
+<body>
+  <figure class="highcharts-figure">
+    <div>How are you feeling today?</div>
+    <div class="">
+      <button class="btn" id="btn1" onclick="submitColor('red')">Red</button>
+      <button class="btn" id="btn2" onclick="submitColor('green')">Green</button>
+      <button class="btn" id="btn3" onclick="submitColor('blue')">Blue</button>
+    </div>
+  
+    <script>
+      function submitColor(color) {
+        var currentDate = new Date().toISOString().slice(0, 10);
+        fetch("http://127.0.0.1:5000/submit_color", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+          // mode: "no-cors",
+          body: JSON.stringify({ date: currentDate, color: color }),
+        })
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Failed to submit color");
+            }
+            alert("Color submitted successfully");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            alert("Failed to update color");
+          });
+      }
+    </script>
+  
+    <div id="container"></div>
+    <p class="highcharts-description">
+      Heatmap with over 31 data points, visualizing your mood every day in March
+      2024. The blue colors indicate sadder days, and the orange colors indicate
+      happier days.
+    </p>
+  </figure>
+</body>
+<script type="module" src="../static/js/calendar.js"></script>
+</html>
+
+
