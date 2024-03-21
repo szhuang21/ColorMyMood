@@ -1,262 +1,3 @@
-// const data = [
-//   {
-//     date: "2023-07-01",
-//     temperature: 19.1,
-//   },
-//   {
-//     date: "2023-07-02",
-//     temperature: 15.3,
-//   },
-//   {
-//     date: "2023-07-03",
-//     temperature: 16.4,
-//   },
-//   {
-//     date: "2023-07-04",
-//     temperature: 16.0,
-//   },
-//   {
-//     date: "2023-07-05",
-//     temperature: 17.9,
-//   },
-//   {
-//     date: "2023-07-06",
-//     temperature: 15.8,
-//   },
-//   {
-//     date: "2023-07-07",
-//     temperature: 21.1,
-//   },
-//   {
-//     date: "2023-07-08",
-//     temperature: 23.3,
-//   },
-//   {
-//     date: "2023-07-09",
-//     temperature: 24.8,
-//   },
-//   {
-//     date: "2023-07-10",
-//     temperature: 25.1,
-//   },
-//   {
-//     date: "2023-07-11",
-//     temperature: 18.2,
-//   },
-//   {
-//     date: "2023-07-12",
-//     temperature: 14.4,
-//   },
-//   {
-//     date: "2023-07-13",
-//     temperature: 19.3,
-//   },
-//   {
-//     date: "2023-07-14",
-//     temperature: 20.2,
-//   },
-//   {
-//     date: "2023-07-15",
-//     temperature: 15.8,
-//   },
-//   {
-//     date: "2023-07-16",
-//     temperature: 16.1,
-//   },
-//   {
-//     date: "2023-07-17",
-//     temperature: 15.7,
-//   },
-//   {
-//     date: "2023-07-18",
-//     temperature: 19.2,
-//   },
-//   {
-//     date: "2023-07-19",
-//     temperature: 18.6,
-//   },
-//   {
-//     date: "2023-07-20",
-//     temperature: 18.3,
-//   },
-//   {
-//     date: "2023-07-21",
-//     temperature: 15.0,
-//   },
-//   {
-//     date: "2023-07-22",
-//     temperature: 14.7,
-//   },
-//   {
-//     date: "2023-07-23",
-//     temperature: 18.8,
-//   },
-//   {
-//     date: "2023-07-24",
-//     temperature: 17.7,
-//   },
-//   {
-//     date: "2023-07-25",
-//     temperature: 17.4,
-//   },
-//   {
-//     date: "2023-07-26",
-//     temperature: 17.6,
-//   },
-//   {
-//     date: "2023-07-27",
-//     temperature: 18.1,
-//   },
-//   {
-//     date: "2023-07-28",
-//     temperature: 18.2,
-//   },
-//   {
-//     date: "2023-07-29",
-//     temperature: 20.3,
-//   },
-//   {
-//     date: "2023-07-30",
-//     temperature: 16.4,
-//   },
-//   {
-//     date: "2023-07-31",
-//     temperature: 17.0,
-//   },
-// ];
-// const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-// const colorData =
-// [
-//   {
-//       "color": "red",
-//       "date": "2024-07-01"
-//   },
-//   {
-//       "color": "pink",
-//       "date": "2024-07-02"
-//   },
-//   {
-//       "color": "purple",
-//       "date": "2024-07-03"
-//   },
-//   {
-//       "color": "purple",
-//       "date": "2024-07-04"
-//   },
-//   {
-//       "color": "pink",
-//       "date": "2024-07-05"
-//   },
-//   {
-//       "color": "red",
-//       "date": "2024-07-06"
-//   },
-//   {
-//       "color": "blue",
-//       "date": "2024-07-07"
-//   },
-//   {
-//       "color": "red",
-//       "date": "2024-07-08"
-//   },
-//   {
-//       "color": "red",
-//       "date": "2024-07-09"
-//   },
-//   {
-//       "color": "gold",
-//       "date": "2024-07-10"
-//   },
-//   {
-//       "color": "red",
-//       "date": "2024-07-11"
-//   },
-//   {
-//       "color": "gold",
-//       "date": "2024-07-12"
-//   },
-//   {
-//       "color": "pink",
-//       "date": "2024-03-13"
-//   },
-//   {
-//       "color": "pink",
-//       "date": "2024-07-14"
-//   },
-//   {
-//       "color": "gold",
-//       "date": "2024-07-15"
-//   },
-//   {
-//       "color": "purple",
-//       "date": "2024-07-16"
-//   },
-//   {
-//       "color": "pink",
-//       "date": "2024-07-17"
-//   },
-//   {
-//       "color": "pink",
-//       "date": "2024-07-18"
-//   },
-//   {
-//       "color": "red",
-//       "date": "2024-07-19"
-//   },
-//   {
-//       "color": "gold",
-//       "date": "2024-07-20"
-//   },
-//   {
-//       "color": "blue",
-//       "date": "2024-07-21"
-//   },
-//   {
-//       "color": "pink",
-//       "date": "2024-07-22"
-//   },
-//   {
-//       "color": "purple",
-//       "date": "2024-07-23"
-//   },
-//   {
-//       "color": "grey",
-//       "date": "2024-07-24"
-//   },
-//   {
-//       "color": "pink",
-//       "date": "2024-07-25"
-//   },
-//   {
-//       "color": "gold",
-//       "date": "2024-07-26"
-//   },
-//   {
-//       "color": "grey",
-//       "date": "2024-07-27"
-//   },
-//   {
-//       "color": "gold",
-//       "date": "2024-07-28"
-//   },
-//   {
-//       "color": "purple",
-//       "date": "2024-07-29"
-//   },
-//   {
-//       "color": "pink",
-//       "date": "2024-07-30"
-//   },
-//   {
-//       "color": "purple",
-//       "date": "2024-07-31"
-//   }
-// ];
-
-// The function takes in a dataset and calculates how many empty tiles needed
-// before and after the dataset is plotted.
-
 fetch("../../data.json")
   .then((response) => {
     if (!response.ok) {
@@ -268,6 +9,16 @@ fetch("../../data.json")
   .then((data) => {
     console.log("data: ", data);
     const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const colorMap = {
+      red: "#ff7f7f",
+      green: "#99d699",
+      blue: "#99ccff",
+      purple: "#d8b9ff",
+      pink: "#ffb3d9",
+      gold: "#ffff99",
+      grey: "#cccccc",
+      white: "#ffffff",
+    };
     function generateChartData(colorData) {
       // Calculate the starting weekday index (0-6 of the first date in the given
       // array)
@@ -287,6 +38,7 @@ fetch("../../data.json")
           y: 5,
           value: null,
           date: null,
+          img_src: null,
           custom: {
             empty: true,
           },
@@ -301,17 +53,21 @@ fetch("../../data.json")
         const xCoordinate = (emptyTilesFirst + day - 1) % 7;
         const yCoordinate = Math.floor((firstWeekday + day - 1) / 7);
         const id = day;
+        const img_src = data[day - 1].img_src
+          ? "../../saved_svg.svg"
+          : "../../saved_svg.svg"; // find out how to add saved svg
 
         // Get the corresponding temperature for the current day from the given
         // array
         const temperature = data[day - 1].temperature;
-        const color = colorData[day - 1].color; // Include color information
+        const color = colorMap[colorData[day - 1].color]; // Include color information
 
         chartData.push({
           x: xCoordinate,
           y: 5 - yCoordinate,
           value: temperature,
           date: new Date(date).getTime(),
+          img_src: img_src,
           color: color,
           custom: {
             monthDay: id,
@@ -327,6 +83,7 @@ fetch("../../data.json")
           y: 0,
           value: null,
           date: null,
+          img_src: null,
           custom: {
             empty: true,
           },
@@ -347,7 +104,7 @@ fetch("../../data.json")
         },
 
         subtitle: {
-          text: "<div id='centeredPrivacy'>Your Moods Through July",
+          text: "<div id='centeredPrivacy'>Your Moods During March 2024",
           align: "left",
         },
 
@@ -407,10 +164,13 @@ fetch("../../data.json")
         colorAxis: {
           min: 0,
           stops: [
-            [0.2, "lightblue"],
-            [0.4, "#CBDFC8"],
-            [0.6, "#F3E99E"],
-            [0.9, "#F9A05C"],
+            [0.2, "#ff7f7f"],
+            [0.3, "#99d699"],
+            [0.4, "#99ccff"],
+            [0.5, "#d8b9ff"],
+            [0.6, "#ffb3d9"],
+            [0.7, "#ffff99"],
+            [0.8, "#cccccc"],
           ],
           labels: {
             format: "{value} °C",
@@ -422,14 +182,12 @@ fetch("../../data.json")
             keys: ["x", "y", "value", "date", "id"],
             data: chartData,
             nullColor: "rgba(196, 196, 196, 0.2)",
-            // borderWidth: 2,
-            // borderColor: 'rgba(196, 196, 196, 0.2)',
             dataLabels: [
               {
                 enabled: true,
                 useHTML: true,
                 format:
-                  '<img src="https://ej2.syncfusion.com/demos/src/schedule/images/newyear.svg" style="width: 20px; height: 20px;">',
+                  '<img src={point.img_src} style="width: 20px; height: 20px;">',
                 style: {
                   textOutline: "none",
                   fontWeight: "normal",
@@ -443,7 +201,6 @@ fetch("../../data.json")
                 verticalAlign: "top",
                 format:
                   "{#unless point.custom.empty}{point.custom.monthDay}{/unless}",
-                // backgroundColor: 'whitesmoke',
                 padding: 2,
                 style: {
                   textOutline: "none",
@@ -477,6 +234,10 @@ fetch("../../data.json")
             throw new Error("Failed to submit drawing");
           }
           alert("Drawing submitted successfully");
+          drawCalendar(
+            "https://ej2.syncfusion.com/demos/src/schedule/images/newyear.svg"
+          );
+          location.reload();
         })
         .catch((error) => {
           console.error("Error:", error);

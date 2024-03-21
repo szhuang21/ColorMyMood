@@ -36,6 +36,7 @@
             throw new Error("Failed to submit color");
           }
           alert("Color submitted successfully");
+          location.reload();
         })
         .catch((error) => {
           console.error("Error:", error);
@@ -47,7 +48,7 @@
   <div id="container"></div>
   <p class="highcharts-description">
     <div id="Explanation">Heatmap with over 31 data points, visualizing your mood every day in March
-      2024. The blue colors indicate sadder days, and the orange colors indicate
+      2024. The blue colors indicate sadder days, and the yellow colors indicate
       happier days.</div>
   </p>
   <div id="centeredPrivacy">Privacy Statement</div>

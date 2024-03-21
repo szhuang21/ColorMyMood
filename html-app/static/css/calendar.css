@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
 .highcharts-figure {
   min-width: 375px;
@@ -21,12 +21,16 @@
   font-size: 17px;
   cursor: pointer;
   margin-bottom: 20px;
-  font-family: Patrick Hand, cursive;
+  font-family:
+    Patrick Hand,
+    cursive;
 }
 
 #centeredText {
   text-align: center;
-  font-family: Patrick Hand, cursive;
+  font-family:
+    Patrick Hand,
+    cursive;
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -34,7 +38,9 @@
 
 #centeredPrivacy {
   text-align: center;
-  font-family: Patrick Hand, cursive;
+  font-family:
+    Patrick Hand,
+    cursive;
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -42,14 +48,18 @@
 
 #centeredTextHead {
   text-align: center;
-  font-family: Patrick Hand, cursive;
+  font-family:
+    Patrick Hand,
+    cursive;
   font-size: 17px;
   margin-top: 20px;
   margin-bottom: 37px;
 }
 
 #Explanation {
-  font-family: Patrick Hand, cursive;
+  font-family:
+    Patrick Hand,
+    cursive;
   font-size: 17px;
   margin-top: 20px;
   margin-bottom: 37px;
@@ -57,12 +67,14 @@
 
 #calendarDays {
   text-align: center;
-  font-family: Patrick Hand, cursive;
+  font-family:
+    Patrick Hand,
+    cursive;
   font-size: 15px;
 }
 
 #btn1 {
-  background-color: #ff7f7f; /* red */
+  background-color: "#ff7f7f"; /* red */
 }
 
 #btn2 {

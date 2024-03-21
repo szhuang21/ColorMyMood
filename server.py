@@ -47,5 +47,40 @@ def update_color():
 
     return "Today's Mood Submitted"
 
+
+
+@app.route('/submit_drawing', methods=['POST'])
+def submit_drawing():
+    print("submit_drawing endpoint called")
+    data = request.json
+    drawing = data.get('drawing')
+    date = data.get('date')
+    print(drawing)
+
+    with open('saved_svg.svg', 'w') as file:
+        file.write(drawing)
+        print('saved_svg.svg')
+
+    with open('data.json', 'r') as file:
+        existing_data = json.load(file)
+    
+    # Check if the date already exists in the JSON data
+    date_exists = False
+    for entry in existing_data:
+        if entry['date'] == date:
+            entry['drawing'] = drawing
+            date_exists = True
+            break
+    
+    # If date doesn't exist, add a new entry
+    if not date_exists:
+        existing_data.append({'drawing': drawing, 'date': date})
+
+    # Write back the updated JSON data to the file
+    with open('data.json', 'w') as file:
+        json.dump(existing_data, file, indent=4)
+
+    return "Today's Drawing Submitted"
+
 if __name__ == '__main__':
     app.run(debug=True)

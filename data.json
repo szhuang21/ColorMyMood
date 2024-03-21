@@ -1,126 +1,127 @@
 [
-    {
-        "color": "red",
-        "date": "2024-07-01"
-    },
-    {
-        "color": "pink",
-        "date": "2024-07-02"
-    },
-    {
-        "color": "purple",
-        "date": "2024-07-03"
-    },
-    {
-        "color": "purple",
-        "date": "2024-07-04"
-    },
-    {
-        "color": "pink",
-        "date": "2024-07-05"
-    },
-    {
-        "color": "red",
-        "date": "2024-07-06"
-    },
-    {
-        "color": "blue",
-        "date": "2024-07-07"
-    },
-    {
-        "color": "red",
-        "date": "2024-07-08"
-    },
-    {
-        "color": "red",
-        "date": "2024-07-09"
-    },
-    {
-        "color": "gold",
-        "date": "2024-07-10"
-    },
-    {
-        "color": "red",
-        "date": "2024-07-11"
-    },
-    {
-        "color": "gold",
-        "date": "2024-07-12"
-    },
-    {
-        "color": "pink",
-        "date": "2024-03-13"
-    },
-    {
-        "color": "pink",
-        "date": "2024-07-14"
-    },
-    {
-        "color": "gold",
-        "date": "2024-07-15"
-    },
-    {
-        "color": "purple",
-        "date": "2024-07-16"
-    },
-    {
-        "color": "pink",
-        "date": "2024-07-17"
-    },
-    {
-        "color": "pink",
-        "date": "2024-07-18"
-    },
-    {
-        "color": "red",
-        "date": "2024-07-19"
-    },
-    {
-        "color": "gold",
-        "date": "2024-07-20"
-    },
-    {
-        "color": "blue",
-        "date": "2024-07-21"
-    },
-    {
-        "color": "pink",
-        "date": "2024-07-22"
-    },
-    {
-        "color": "purple",
-        "date": "2024-07-23"
-    },
-    {
-        "color": "grey",
-        "date": "2024-07-24"
-    },
-    {
-        "color": "pink",
-        "date": "2024-07-25"
-    },
-    {
-        "color": "gold",
-        "date": "2024-07-26"
-    },
-    {
-        "color": "grey",
-        "date": "2024-07-27"
-    },
-    {
-        "color": "gold",
-        "date": "2024-07-28"
-    },
-    {
-        "color": "purple",
-        "date": "2024-07-29"
-    },
-    {
-        "color": "pink",
-        "date": "2024-07-30"
-    },
-    {
-        "color": "purple",
-        "date": "2024-07-31"
-    }
-  ]
+  {
+    "color": "red",
+    "date": "2024-03-01"
+  },
+  {
+    "color": "gold",
+    "date": "2024-03-02"
+  },
+  {
+    "color": "gold",
+    "date": "2024-03-03"
+  },
+  {
+    "color": "red",
+    "date": "2024-03-04"
+  },
+  {
+    "color": "green",
+    "date": "2024-03-05"
+  },
+  {
+    "color": "blue",
+    "date": "2024-03-06"
+  },
+  {
+    "color": "blue",
+    "date": "2024-03-07"
+  },
+  {
+    "color": "green",
+    "date": "2024-03-08"
+  },
+  {
+    "color": "purple",
+    "date": "2024-03-09"
+  },
+  {
+    "color": "gold",
+    "date": "2024-03-10"
+  },
+  {
+    "color": "gold",
+    "date": "2024-03-11"
+  },
+  {
+    "color": "gold",
+    "date": "2024-03-12"
+  },
+  {
+    "color": "gold",
+    "date": "2024-03-13"
+  },
+  {
+    "color": "pink",
+    "date": "2024-03-14"
+  },
+  {
+    "color": "gold",
+    "date": "2024-03-15"
+  },
+  {
+    "color": "blue",
+    "date": "2024-03-16"
+  },
+  {
+    "color": "grey",
+    "date": "2024-03-17"
+  },
+  {
+    "color": "grey",
+    "date": "2024-03-18"
+  },
+  {
+    "color": "purple",
+    "date": "2024-03-19"
+  },
+  {
+    "color": "green",
+    "date": "2024-03-20"
+  },
+  {
+    "color": "red",
+    "date": "2024-03-21",
+    "drawing": "<svg viewBox=\"0 0 500 500\" width=\"500\" height=\"500\" version=\"1.1\" baseProfile=\"full\" xmlns=\"http://www.w3.org/2000/svg\"><style id=\"js-draw-style-sheet\">path{stroke-linecap:round;stroke-linejoin:round;}text{white-space:pre;}</style><path d=\"M179,272q108,154 190,246q57,64 228,64\" fill=\"none\" stroke=\"#803380\" stroke-width=\"24\"></path></svg>"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-22"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-23"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-24"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-25"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-26"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-27"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-28"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-29"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-30"
+  },
+  {
+    "color": "white",
+    "date": "2024-03-31"
+  }
+]
