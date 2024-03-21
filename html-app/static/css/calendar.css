@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 .highcharts-figure {
   min-width: 375px;
   max-width: 800px;
@@ -12,22 +14,56 @@
 }
 
 .btn {
-  width: 100px;
-  height: 100px;
+  width: 90;
+  height: 90;
   border-radius: 50%;
   margin: 0 10px;
-  font-size: 16px;
+  font-size: 17px;
   cursor: pointer;
+  margin-bottom: 20px;
+  font-family: Patrick Hand, cursive;
+}
+
+#centeredText {
+  text-align: center;
+  font-family: Patrick Hand, cursive;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#centeredTextHead {
+  text-align: center;
+  font-family: Patrick Hand, cursive;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 37px;
 }
 
 #btn1 {
-  background-color: #ff5733; /* Red */
+  background-color: #ff7f7f; /* red */
 }
 
 #btn2 {
-  background-color: #33ff57; /* Green */
+  background-color: #99d699; /* green */
 }
 
 #btn3 {
-  background-color: #3366ff; /* Blue */
+  background-color: #99ccff; /* blue */
+}
+
+#btn4 {
+  background-color: #d8b9ff; /* purple */
+}
+
+#btn5 {
+  background-color: #ffb3d9; /* pink */
+}
+
+#btn6 {
+  background-color: #ffff99; /* gold */
+}
+
+#btn7 {
+  background-color: #cccccc; /* grey */
 }
