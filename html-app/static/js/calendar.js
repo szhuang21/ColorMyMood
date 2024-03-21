@@ -15,10 +15,21 @@ fetch("../../data.json")
       blue: "#99ccff",
       purple: "#d8b9ff",
       pink: "#ffb3d9",
-      gold: "#ffff99",
+      gold: "#FFC000",
       grey: "#cccccc",
       white: "#ffffff",
     };
+    const colorToDrawing = {
+      red: "../../drawings/angry.svg",
+      green: "../../drawings/annoyed.svg",
+      blue: "../../drawings/sad.svg",
+      purple: "../../drawings/proud.svg",
+      pink: "../../drawings/affectionate.svg",
+      gold: "../../drawings/happy.svg",
+      grey: "../../drawings/neutral.svg",
+      white: "",
+    };
+    // colorData is the data from data.json passed in
     function generateChartData(colorData) {
       // Calculate the starting weekday index (0-6 of the first date in the given
       // array)
@@ -38,7 +49,7 @@ fetch("../../data.json")
           y: 5,
           value: null,
           date: null,
-          img_src: null,
+          drawing: null,
           custom: {
             empty: true,
           },
@@ -53,9 +64,9 @@ fetch("../../data.json")
         const xCoordinate = (emptyTilesFirst + day - 1) % 7;
         const yCoordinate = Math.floor((firstWeekday + day - 1) / 7);
         const id = day;
-        const img_src = data[day - 1].img_src
+        const drawing = data[day - 1].drawing
           ? "../../saved_svg.svg"
-          : "../../saved_svg.svg"; // find out how to add saved svg
+          : colorToDrawing[data[day - 1].color]; // find out how to add saved svg
 
         // Get the corresponding temperature for the current day from the given
         // array
@@ -67,7 +78,7 @@ fetch("../../data.json")
           y: 5 - yCoordinate,
           value: temperature,
           date: new Date(date).getTime(),
-          img_src: img_src,
+          drawing: drawing,
           color: color,
           custom: {
             monthDay: id,
@@ -83,7 +94,7 @@ fetch("../../data.json")
           y: 0,
           value: null,
           date: null,
-          img_src: null,
+          drawing: null,
           custom: {
             empty: true,
           },
@@ -187,7 +198,7 @@ fetch("../../data.json")
                 enabled: true,
                 useHTML: true,
                 format:
-                  '<img src={point.img_src} style="width: 20px; height: 20px;">',
+                  '<img src={point.drawing} style="width: 20px; height: 20px;">',
                 style: {
                   textOutline: "none",
                   fontWeight: "normal",
