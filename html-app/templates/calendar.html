@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/js-draw@1.0.0/dist/bundle.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/heatmap.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -21,7 +22,7 @@
   <script>
     function submitColor(color) {
       var currentDate = new Date().toISOString().slice(0, 10);
-      fetch("http://127.0.0.1:5500/submit_color", {
+      fetch("http://127.0.0.1:5000/submit_color", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
