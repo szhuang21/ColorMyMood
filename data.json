@@ -1,6 +1,126 @@
 [
     {
-        "color": "green",
-        "date": "2024-03-20"
+        "color": "red",
+        "date": "2024-07-01"
+    },
+    {
+        "color": "pink",
+        "date": "2024-07-02"
+    },
+    {
+        "color": "purple",
+        "date": "2024-07-03"
+    },
+    {
+        "color": "purple",
+        "date": "2024-07-04"
+    },
+    {
+        "color": "pink",
+        "date": "2024-07-05"
+    },
+    {
+        "color": "red",
+        "date": "2024-07-06"
+    },
+    {
+        "color": "blue",
+        "date": "2024-07-07"
+    },
+    {
+        "color": "red",
+        "date": "2024-07-08"
+    },
+    {
+        "color": "red",
+        "date": "2024-07-09"
+    },
+    {
+        "color": "gold",
+        "date": "2024-07-10"
+    },
+    {
+        "color": "red",
+        "date": "2024-07-11"
+    },
+    {
+        "color": "gold",
+        "date": "2024-07-12"
+    },
+    {
+        "color": "pink",
+        "date": "2024-03-13"
+    },
+    {
+        "color": "pink",
+        "date": "2024-07-14"
+    },
+    {
+        "color": "gold",
+        "date": "2024-07-15"
+    },
+    {
+        "color": "purple",
+        "date": "2024-07-16"
+    },
+    {
+        "color": "pink",
+        "date": "2024-07-17"
+    },
+    {
+        "color": "pink",
+        "date": "2024-07-18"
+    },
+    {
+        "color": "red",
+        "date": "2024-07-19"
+    },
+    {
+        "color": "gold",
+        "date": "2024-07-20"
+    },
+    {
+        "color": "blue",
+        "date": "2024-07-21"
+    },
+    {
+        "color": "pink",
+        "date": "2024-07-22"
+    },
+    {
+        "color": "purple",
+        "date": "2024-07-23"
+    },
+    {
+        "color": "grey",
+        "date": "2024-07-24"
+    },
+    {
+        "color": "pink",
+        "date": "2024-07-25"
+    },
+    {
+        "color": "gold",
+        "date": "2024-07-26"
+    },
+    {
+        "color": "grey",
+        "date": "2024-07-27"
+    },
+    {
+        "color": "gold",
+        "date": "2024-07-28"
+    },
+    {
+        "color": "purple",
+        "date": "2024-07-29"
+    },
+    {
+        "color": "pink",
+        "date": "2024-07-30"
+    },
+    {
+        "color": "purple",
+        "date": "2024-07-31"
     }
-]
+  ]

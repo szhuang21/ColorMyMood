@@ -126,14 +126,145 @@ const data = [
 ];
 const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
+const colorData = 
+[
+  {
+      "color": "red",
+      "date": "2024-07-01"
+  },
+  {
+      "color": "pink",
+      "date": "2024-07-02"
+  },
+  {
+      "color": "purple",
+      "date": "2024-07-03"
+  },
+  {
+      "color": "purple",
+      "date": "2024-07-04"
+  },
+  {
+      "color": "pink",
+      "date": "2024-07-05"
+  },
+  {
+      "color": "red",
+      "date": "2024-07-06"
+  },
+  {
+      "color": "blue",
+      "date": "2024-07-07"
+  },
+  {
+      "color": "red",
+      "date": "2024-07-08"
+  },
+  {
+      "color": "red",
+      "date": "2024-07-09"
+  },
+  {
+      "color": "gold",
+      "date": "2024-07-10"
+  },
+  {
+      "color": "red",
+      "date": "2024-07-11"
+  },
+  {
+      "color": "gold",
+      "date": "2024-07-12"
+  },
+  {
+      "color": "pink",
+      "date": "2024-03-13"
+  },
+  {
+      "color": "pink",
+      "date": "2024-07-14"
+  },
+  {
+      "color": "gold",
+      "date": "2024-07-15"
+  },
+  {
+      "color": "purple",
+      "date": "2024-07-16"
+  },
+  {
+      "color": "pink",
+      "date": "2024-07-17"
+  },
+  {
+      "color": "pink",
+      "date": "2024-07-18"
+  },
+  {
+      "color": "red",
+      "date": "2024-07-19"
+  },
+  {
+      "color": "gold",
+      "date": "2024-07-20"
+  },
+  {
+      "color": "blue",
+      "date": "2024-07-21"
+  },
+  {
+      "color": "pink",
+      "date": "2024-07-22"
+  },
+  {
+      "color": "purple",
+      "date": "2024-07-23"
+  },
+  {
+      "color": "grey",
+      "date": "2024-07-24"
+  },
+  {
+      "color": "pink",
+      "date": "2024-07-25"
+  },
+  {
+      "color": "gold",
+      "date": "2024-07-26"
+  },
+  {
+      "color": "grey",
+      "date": "2024-07-27"
+  },
+  {
+      "color": "gold",
+      "date": "2024-07-28"
+  },
+  {
+      "color": "purple",
+      "date": "2024-07-29"
+  },
+  {
+      "color": "pink",
+      "date": "2024-07-30"
+  },
+  {
+      "color": "purple",
+      "date": "2024-07-31"
+  }
+];
+
+
+
+
 // The function takes in a dataset and calculates how many empty tiles needed
 // before and after the dataset is plotted.
-function generateChartData(data) {
+function generateChartData(colorData) {
   // Calculate the starting weekday index (0-6 of the first date in the given
   // array)
-  const firstWeekday = new Date(data[0].date).getDay(),
-    monthLength = data.length,
-    lastElement = data[monthLength - 1].date,
+  const firstWeekday = new Date(colorData[0].date).getDay(),
+    monthLength = colorData.length,
+    lastElement = colorData[monthLength - 1].date,
     lastWeekday = new Date(lastElement).getDay(),
     lengthOfWeek = 6,
     emptyTilesFirst = firstWeekday,
@@ -165,12 +296,14 @@ function generateChartData(data) {
     // Get the corresponding temperature for the current day from the given
     // array
     const temperature = data[day - 1].temperature;
+    const color = colorData[day - 1].color; // Include color information
 
     chartData.push({
       x: xCoordinate,
       y: 5 - yCoordinate,
       value: temperature,
       date: new Date(date).getTime(),
+      color: color,
       custom: {
         monthDay: id,
       },
@@ -200,12 +333,12 @@ Highcharts.chart("container", {
   },
 
   title: {
-    text: "Color My Mood",
+    text: "<div id='centeredPrivacy'>Color My Mood</div>",
     align: "left",
   },
 
   subtitle: {
-    text: "Your Moods Through July",
+    text: "<div id='centeredPrivacy'>Your Moods Through July",
     align: "left",
   },
 
@@ -218,8 +351,7 @@ Highcharts.chart("container", {
     outside: true,
     zIndex: 20,
     headerFormat: "",
-    pointFormat:
-      "{#unless point.custom.empty}{point.date:%A, %b %e, %Y}{/unless}",
+    pointFormat:"{#unless point.custom.empty}{point.date:%A, %b %e, %Y}{/unless}",
     nullFormat: "No data",
   },
 
@@ -236,6 +368,9 @@ Highcharts.chart("container", {
         textTransform: "uppercase",
         fontWeight: "bold",
       },
+      formatter: function () {
+        return '<div id="calendarDays">' + this.value + '</div>';
+      }
     },
     accessibility: {
       description: "weekdays",
