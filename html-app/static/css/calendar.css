@@ -36,6 +36,16 @@
   margin-bottom: 20px;
 }
 
+#centeredInstructions {
+  text-align: center;
+  font-family:
+    Patrick Hand,
+    cursive;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 #centeredPrivacy {
   text-align: center;
   font-family:
