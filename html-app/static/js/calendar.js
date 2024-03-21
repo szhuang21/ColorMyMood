@@ -325,7 +325,7 @@ function generateChartData(colorData) {
   }
   return chartData;
 }
-const chartData = generateChartData(colorData);
+const chartData = generateChartData(data);
 
 Highcharts.chart("container", {
   chart: {
@@ -333,12 +333,12 @@ Highcharts.chart("container", {
   },
 
   title: {
-    text: "Color My Mood",
+    text: "<div id='centeredPrivacy'>Color My Mood</div>",
     align: "left",
   },
 
   subtitle: {
-    text: "Your Moods Through July",
+    text: "<div id='centeredPrivacy'>Your Moods Through July",
     align: "left",
   },
 
@@ -351,8 +351,7 @@ Highcharts.chart("container", {
     outside: true,
     zIndex: 20,
     headerFormat: "",
-    pointFormat:
-      "{#unless point.custom.empty}{point.date:%A, %b %e, %Y}{/unless}",
+    pointFormat:"{#unless point.custom.empty}{point.date:%A, %b %e, %Y}{/unless}",
     nullFormat: "No data",
   },
 
@@ -369,6 +368,9 @@ Highcharts.chart("container", {
         textTransform: "uppercase",
         fontWeight: "bold",
       },
+      formatter: function () {
+        return '<div id="calendarDays">' + this.value + '</div>';
+      }
     },
     accessibility: {
       description: "weekdays",

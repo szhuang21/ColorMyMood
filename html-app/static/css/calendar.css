@@ -32,12 +32,33 @@
   margin-bottom: 20px;
 }
 
+#centeredPrivacy {
+  text-align: center;
+  font-family: Patrick Hand, cursive;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #centeredTextHead {
   text-align: center;
   font-family: Patrick Hand, cursive;
   font-size: 17px;
   margin-top: 20px;
   margin-bottom: 37px;
+}
+
+#Explanation {
+  font-family: Patrick Hand, cursive;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 37px;
+}
+
+#calendarDays {
+  text-align: center;
+  font-family: Patrick Hand, cursive;
+  font-size: 15px;
 }
 
 #btn1 {
